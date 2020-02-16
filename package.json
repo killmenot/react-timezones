@@ -1,0 +1,61 @@
+{
+  "name": "react-timezones",
+  "version": "0.1.0",
+  "description": "React timezones",
+  "main": "build/index.js",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "timezones"
+  ],
+  "author": {
+    "name": "Alexey Kucherenko",
+    "url": "https://github.com/killmenot"
+  },
+  "contributors": [
+    "Alexey Kucherenko (https://github/killmenot)"
+  ],
+  "homepage": "https://github.com/killmenot/react-timezones#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killmenot/react-timezones.git"
+  },
+  "bugs": {
+    "url": "https://github.com/killmenot/react-timezones/issues"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production BABEL_ENV=production babel src -d build --copy-files",
+    "prebuild": "rimraf build",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint src --ext .js,.jsx --fix"
+  },
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2",
+    "prop-types": "^15.7.2",
+    "react-is": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/runtime": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.7.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "react": "^16.12.0",
+    "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.x"
+  }
+}

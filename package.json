@@ -4,7 +4,7 @@
   "description": "React timezones",
   "main": "build/index.js",
   "files": [
-    "build/**.*"
+    "build/**"
   ],
   "license": "MIT",
   "keywords": [

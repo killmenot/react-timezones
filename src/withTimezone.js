@@ -12,6 +12,7 @@ const withTimezone = (Component) => {
             {...props}
             ref={ref}
             timezone={context.timezone}
+            setTimezone={context.setTimezone}
           />
         )
       }}

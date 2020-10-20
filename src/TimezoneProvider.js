@@ -9,6 +9,12 @@ class TimezoneProvider extends Component {
     this.state = {
       timezone: props.timezone,
     }
+
+    this.setTimezone = this.setTimezone.bind(this)
+  }
+
+  setTimezone(timezone) {
+    this.setState({ timezone })
   }
 
   render() {
@@ -19,6 +25,7 @@ class TimezoneProvider extends Component {
       timezones,
       timezone,
       idName,
+      setTimezone,
     }
 
     return (

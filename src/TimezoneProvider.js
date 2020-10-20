@@ -9,8 +9,6 @@ class TimezoneProvider extends Component {
     this.state = {
       timezone: props.timezone,
     }
-
-    this.setTimezone = this.setTimezone.bind(this)
   }
 
   setTimezone(timezone) {
@@ -20,6 +18,8 @@ class TimezoneProvider extends Component {
   render() {
     const { timezones, idName, children } = this.props
     const { timezone } = this.state
+
+    const setTimezone = this.setTimezone.bind(this)
 
     const contextValue = {
       timezones,

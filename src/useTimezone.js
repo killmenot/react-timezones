@@ -6,6 +6,6 @@ export default () => {
 
   return {
     timezone,
-    setTimezone
+    setTimezone,
   }
 }

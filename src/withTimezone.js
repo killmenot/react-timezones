@@ -6,16 +6,14 @@ import TimezoneContext from './TimezoneContext'
 const withTimezone = (Component) => {
   const WrappedComponent = React.forwardRef((props, ref) => (
     <TimezoneContext.Consumer>
-      {(context) => {
-        return (
-          <Component
-            {...props}
-            ref={ref}
-            timezone={context.timezone}
-            setTimezone={context.setTimezone}
-          />
-        )
-      }}
+      {(context) => (
+        <Component
+          {...props}
+          ref={ref}
+          timezone={context.timezone}
+          setTimezone={context.setTimezone}
+        />
+      )}
     </TimezoneContext.Consumer>
   ))
 

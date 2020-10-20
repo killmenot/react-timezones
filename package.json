@@ -3,6 +3,9 @@
   "version": "0.2.0",
   "description": "React timezones",
   "main": "build/index.js",
+  "files": [
+    "build/**.*"
+  ],
   "license": "MIT",
   "keywords": [
     "react",
